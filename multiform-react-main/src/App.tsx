@@ -1,14 +1,15 @@
  import { Router } from './router';
-// import { FormProvider } from './contexts/FormContext';
+ import { FormProvider } from './contexts/FormContext';
 
 const App = () => {
   return (
-    // <FormProvider>
-  
-    // </FormProvider>
-    <>
-       <Router />
-    </>
+
+
+      <FormProvider>
+        <Router />
+      </FormProvider>
+     
+
   );
 }
 

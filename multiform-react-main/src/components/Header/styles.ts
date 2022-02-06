@@ -1,8 +1,8 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
 export const Container = styled.div`
-    padding: 25px 0;
-    border-bottom: 1px solid #16195C;
+    padding: 1em 0;
+    
 
     h1 {
         margin: 0;
@@ -13,4 +13,4 @@ export const Container = styled.div`
         font-size: 14px;
         color: #B8B8D4;
     }
-`;
+`

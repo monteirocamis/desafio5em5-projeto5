@@ -12,27 +12,44 @@ type Props = {
     active: boolean;
 }
 
+
+
+
 export const SidebarItem = ({ title, description, icon, path, active }: Props) => {
     return (
         <C.Container>
+
             <Link to={path}>
-                <C.Info>
+
+
+                
+                 <C.Info>
                     <C.Title>{title}</C.Title>
                     <C.Description>{description}</C.Description>
                 </C.Info>
-                <C.IconArea active={active}>
-                    {icon === 'profile' &&
-                        <ProfileIcon fill="white" width={24} height={24} />
+
+               <C.IconArea active={active}>
+                {icon === 'profile' &&
+                   <ProfileIcon fill="white" width={20}  />
                     }
                     {icon === 'book' &&
-                        <BookIcon fill="white" width={24} height={24} />
+                        <BookIcon fill="white" width={20}  />
                     }
                     {icon === 'mail' &&
-                        <MailIcon fill="white" width={24} height={24} />
+                        <MailIcon fill="white" width={20} />
                     }
-                </C.IconArea>
-                <C.Point active={active}></C.Point>
+
+
+                 
+               </C.IconArea>
+
+             <C.Point active={active}>  </C.Point>
+
+
             </Link>
         </C.Container>
     );
 }
+
+
+ 
