@@ -2,6 +2,10 @@ import styled from "styled-components";
 
 export const Container = styled.div`
 
+
+    @media screen and (max-device-width : 800px){
+        width: 13em;
+    }
    
     p {
     font-size: 13px;
@@ -31,18 +35,25 @@ export const Container = styled.div`
             border-radius: 10px;
             color: #FFF;
             font-size: 15px;
-            background-color: #3D1D3D;
+            background-color: #604861;
         }
        
     }
 
     button {
-        background-color:  #3976FF; 
+        background-color:  #3976FF;  
         color: #FFF;
         font-weight: bold;
-        padding: 0.5em 1em;
+        padding: 10px 20px;
         border: 0;
         border-radius: 30px;
-        margin-top: 1em;
+        margin-top: 30px;
+    }
+
+    .backButton{
+        font-size: 16px;
+        text-decoration:none;
+        padding: 10px 20px;
+        color: #B8B8D4;
     }
 `;

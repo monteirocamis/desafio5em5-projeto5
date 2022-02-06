@@ -15,7 +15,7 @@ export const Container = styled.div`
     hr {
         height: 1px;
         border: 0;
-        background-color: #492e4a;
+        background-color: #B8B8D4;
         margin: 30px 0;
     }
     
@@ -26,10 +26,13 @@ export const Container = styled.div`
         input {
             display: block;
             margin: 7px 0;
+            //box-sizing: border-box;
+            //width: 100%;
             padding: 0.7em;
             border: 2px solid #3976FF;
             border-radius: 10px;
             color: #FFF;
+            //outline: 0;
             font-size: 15px;
             background-color: #3D1D3D;
         }
@@ -37,12 +40,20 @@ export const Container = styled.div`
     }
 
     button {
-        background-color:  #3976FF; 
+        background-color:  #3976FF;   //  #25CD89;
         color: #FFF;
+      //  font-size: 14px;
         font-weight: bold;
-        padding: 0.5em 1em;
+        padding: 10px 20px;
         border: 0;
         border-radius: 30px;
-        margin-top: 1em;
+        cursor: pointer;
+        margin-top: 30px;
+    }
+    .backButton{
+        font-size: 16px;
+        text-decoration:none;
+        padding: 10px 20px;
+        color: #B8B8D4;
     }
 `;

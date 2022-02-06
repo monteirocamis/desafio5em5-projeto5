@@ -42,6 +42,7 @@ const FormContext = createContext<ContextType | undefined>(undefined)
 
 
 
+
 export enum FormActions {
     setCurrentStep,
     setName,
@@ -49,6 +50,10 @@ export enum FormActions {
     setEmail,
     setGithub
 }
+
+
+
+
 
 const formReducer = (state: State , action: Action) => {
     switch(action.type) {
@@ -72,7 +77,7 @@ const formReducer = (state: State , action: Action) => {
 
 
 
- export const FormProvider = ({children}) => {
+ export const FormProvider = ({children} : FormProviderProps) => {
     const [state, dispatch] = useReducer(formReducer, initialData);
     const value = { state, dispatch };
 
