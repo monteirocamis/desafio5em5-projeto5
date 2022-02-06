@@ -1,6 +1,8 @@
 # desafio5em5-projeto5
 Challenge  with Typeform studies from Boniek video.
 Form to insert informations about a developer 
+## o que precisa melhor:
+ - icones em mobile
 
 ###imagens em desktop
 ![image](https://user-images.githubusercontent.com/26682838/152668352-7ee0d37e-575a-4e1b-a9dd-bca0840e7bf0.png)
